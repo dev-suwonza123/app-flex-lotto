@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WOWSLOT66 เกมสล็อตออนไลน์</title>
+<meta property="og:locale" content="th_TH">
+<meta property="og:type" content="game mobile">
+<meta property="og:image" content="/wowslot66/logo.jpg">
+<meta property="og:url" content="wowslot66.com" />
+<meta property="og:type" content="games" />
+<meta property="og:title" content="ชวนเพื่อนมาเล่นกับเรา รับเงินตลอดชีพ / รัยค่าคอมตลอดชีพ/ รับเครดิตฟรี 10 %" />
+<meta property="og:description" content="ชวนเพื่อนมาเล่นกับเรา รับเงินตลอดชีพ / รัยค่าคอมตลอดชีพ/ รับเครดิตฟรี 10 %" />
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+        body {
+            background:url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+<div class="cover-container d-flex align-items-center">
+<div class="text-center mx-auto">
+<img src="/wowslot66/title.png" class="img-fluid" />
+<div class="text-danger font-weight-bold mt-5">
+เพียงแชร์ต่อไปให้เพื่อน แล้วส่งข้อมูลให้แอดมิน ก็ได้รับเครดิตฟรีไปเลย 100 บาททันที!!
+</div>
+<button class="btn btn-primary w-50 share-btn mt-3" size="sm" onclick="sendShare()">แชร์</button>
+</div>
+</div>
+<script charset="utf-8" src="/js/bootstrap.bundle.min.js"></script>
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script>
+      const siteName = 'wowslot66'
+      const lineId = '@wowslot66'
+      const registerUrl = 'registers/index.html'
+      const liffId = '1657719453-JPXyPlyb'
+
+      async function sendShare() {
+        const result = await liff.shareTargetPicker([
+          {
+            "type": "flex",
+            "altText": `${siteName.toUpperCase()} แชร์ต่อรับเครดิตฟรี`,
+            "contents": {
+              "type": "bubble",
+              "hero": {
+                "type": "image",
+                "url": `https://wowslotshare.com/${siteName}/line.jpg`,
+                "size": "full",
+                "aspectRatio": "1.91:1",
+                "action": {
+                  "type": "uri",
+                  "uri": `https://line.me/R/ti/p/${lineId}`
+                }
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": siteName.toUpperCase(),
+                    "size": "xl",
+                    "weight": "bold",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "แจกฟรี 100 บาทรวมทุกเกมสล็อตออนไลน์เล่นได้ทุกค่ายครบจบในเว็ปเดียว",
+                    "size": "sm",
+                    "align": "center",
+                    "color": "#c59292",
+                    "wrap": true
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "horizontal",
+                "spacing": "md",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "สมัครสมาชิก",
+                      "uri": registerUrl
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "style": "primary",
+                    "action": {
+                      "type": "uri",
+                      "label": "แชร์เลย",
+                      "uri": `https://liff.line.me/${liffId}`
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ])
+
+        if (result) {
+          liff.closeWindow()
+        }
+      }
+
+      async function main() {
+        await liff.init({ liffId })
+        if (!liff.isLoggedIn()) {
+          liff.login()
+        }
+      }
+      main()
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77655b12ee7b6bd5","version":"2022.11.3","r":1,"token":"3ca21dc6819a47b988c0cbca0264eca1","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
